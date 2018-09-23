@@ -102,6 +102,7 @@ header {
 	opacity: 0;
 }
 
+
 @keyframes fadein {
 	100% {
 		opacity: 1;
@@ -196,7 +197,7 @@ header nav>a {
 
 .packages .grid li {
 	height: 300px; 
-	padding: 20px 50px;
+	padding: 50px;
 	flex-basis: 50%;
 	display: flex;
 	flex-direction: column;
@@ -206,7 +207,9 @@ header nav>a {
 
 .packages .grid li h4 {
 	font-size: 30px;
+	margin: 25px 0;
 }
+
 
 .packages .grid li i {
 	color: #8c9eff;
@@ -267,4 +270,115 @@ footer p {
 	font-size: 14px;
 	opacity: 0.6;
 }
+
+/*Media Queries*/
+
+
+@media only screen and (max-width: 1040px) {
+
+	/*General*/
+
+	section h3.title {
+		font-size: 25px;
+		width: 90vw;
+	}
+
+	section p {
+		font-size: 18px;
+		width: 90vw;
+	}
+
+	section hr {
+		width: 150px;
+	}
+
+	ul.grid {
+		flex-direction: column;
+		width: 100vw;
+	}
+
+	/*Header*/
+
+	header {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	header nav {
+		margin-top: 30px;
+	}
+	header nav a {
+		margin: 0 12px;
+	}
+
+	/*Hero*/
+
+	.hero-content-area {
+		position: relative;
+
+	}
+	.hero h1 {
+		font-size: 30px;
+		width: 90vw;
+	}
+
+	.hero h3 {
+		font-size: 15px;	
+	}
+
+	.hero a.btn {
+		font-size: 15px;
+		padding: 15px 30px;
+	}
+
+	/*Packages*/
+	
+	.packages .grid li i {
+		font-size: 50px;
+	}
+
+	.packages .grid li h4 {
+		font-size: 20px;
+	}
+	.packages .grid li p {
+		font-size: 16px;
+		width: 80vw;
+	}
+
+	/*Testemonials*/
+
+	.testimonials .quote {
+		font-size: 16px;
+	}
+
+	.testimonials .author {
+		font-size: 14px;
+	}
+
+	/*Contact*/
+
+	.contact form {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.contact form input {
+		margin: 0;
+		width: 60vw;
+	}
+
+	.contact form .btn {
+		font-size: 15px;
+		padding: 15px 0;
+		width: 150px;
+		margin-top: 20px;
+	}
+	
+}
+
+
+
+
+
+
 
