@@ -376,6 +376,15 @@ footer p {
 	
 }
 
+@media only screen and (max-width: 1150px) {
+
+	/*Footer*/
+
+	footer p:nth-of-type(2) {
+		display: none;
+	}
+	
+}
 
 
 
